@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro A.Devlin</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts: Archivo Black & Space Mono -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg retro-navbar">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="
+            font-family: 'Archivo Black';
+            font-size: 1.5rem;
+            border: 2px solid black;
+            padding: 5px 10px;
+            background: white;
+          "
+        >
+          <i class="fas fa-circle" style="color: var(--retro-red)"></i> ALEX.D
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">WORK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <!-- 1. Hero Section -->
+      <div class="hero-wrapper">
+        <!-- Abstract Icon Group -->
+        <div style="margin-bottom: 20px">
+          <i class="fas fa-cube css-icon"></i>
+          <i class="fas fa-shapes css-icon" style="color: var(--retro-red)"></i>
+        </div>
+
+        <h1 class="hero-large-text">
+          HELLO.<br />I'M <span class="hero-red-highlight">ALEX.</span>
+        </h1>
+        <p
+          class="lead"
+          style="
+            font-weight: bold;
+            background: white;
+            display: inline-block;
+            padding: 5px;
+            border: 2px solid black;
+          "
+        >
+          I build things for the web. Retro style.
+        </p>
+        <div style="margin-top: 40px">
+          <a href="#projects" class="btn btn-funky me-3">See Projects</a>
+          <a href="#contact" class="btn btn-outline-funky">Hire Me</a>
+        </div>
+      </div>
+
+      <!-- 2. About Window -->
+      <div id="about" class="retro-window">
+        <div class="window-header">
+          <h3 class="window-title">about_me.txt</h3>
+          <div class="window-controls">
+            <div class="control-dot"></div>
+            <div class="control-dot"></div>
+            <div class="control-dot"></div>
+          </div>
+        </div>
+        <div class="window-body">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p>
+                I am a creative developer who loves blending
+                <b>old-school aesthetics</b> with modern technology. Currently
+                accessible via the world wide web. I specialize in React,
+                Node.js, and breaking design rules properly.
+              </p>
+              <p>Based in the digital ether. Available for freelance.</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-smile-wink" style="font-size: 8rem"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Projects Window -->
+      <div id="projects" class="retro-window">
+        <div class="window-header">
+          <h3 class="window-title">my_work_final_v2.folder</h3>
+          <div class="window-controls">
+            <div class="control-dot"></div>
+            <div class="control-dot"></div>
+            <div class="control-dot"></div>
+          </div>
+        </div>
+        <div class="window-body">
+          <div
+            id="projectsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#projectsCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#projectsCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#projectsCarousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <!-- Project 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="https://placehold.co/600x400/000/FFF?text=PROJECT_01"
+                      class="d-block w-100"
+                      style="border: 3px solid black"
+                      alt="P1"
+                    />
+                  </div>
+                  <div
+                    class="col-md-6 d-flex flex-column justify-content-center"
+                  >
+                    <div class="p-4">
+                      <h2 class="project-title">E-Commerce</h2>
+                      <p>
+                        A monochromatic shopping experience built for speed.
+                      </p>
+                      <div class="mt-3">
+                        <span class="funky-tag">REACT</span>
+                        <span class="funky-tag">STRIPE</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="https://placehold.co/600x400/FF2A2A/FFF?text=PROJECT_02"
+                      class="d-block w-100"
+                      style="border: 3px solid black"
+                      alt="P2"
+                    />
+                  </div>
+                  <div
+                    class="col-md-6 d-flex flex-column justify-content-center"
+                  >
+                    <div class="p-4">
+                      <h2 class="project-title">Dashboard</h2>
+                      <p>High contrast analytics for decision makers.</p>
+                      <div class="mt-3">
+                        <span class="funky-tag">D3.JS</span>
+                        <span class="funky-tag">NODE</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 3 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="https://placehold.co/600x400/FFF/000?text=PROJECT_03"
+                      class="d-block w-100"
+                      style="border: 3px solid black"
+                      alt="P3"
+                    />
+                  </div>
+                  <div
+                    class="col-md-6 d-flex flex-column justify-content-center"
+                  >
+                    <div class="p-4">
+                      <h2 class="project-title">Mobile UI</h2>
+                      <p>Bold typography driven mobile interface.</p>
+                      <div class="mt-3">
+                        <span class="funky-tag">FIGMA</span>
+                        <span class="funky-tag">FLUTTER</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide="prev"
+              style="width: 5%"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+                style="filter: invert(1); background-color: black"
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide="next"
+              style="width: 5%"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+                style="filter: invert(1); background-color: black"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Photo Gallery Window -->
+      <div id="photography" class="retro-window">
+        <div class="window-header">
+          <h3 class="window-title">camera_roll.jpg</h3>
+          <div class="window-controls">
+            <div class="control-dot"></div>
+            <div class="control-dot"></div>
+            <div class="control-dot"></div>
+          </div>
+        </div>
+        <div class="window-body">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <img
+                src="https://placehold.co/300x300/F00/FFF?text=RAW"
+                class="img-fluid"
+                style="border: 2px solid black; box-shadow: 3px 3px 0 black"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="https://placehold.co/300x300/000/FFF?text=FILM"
+                class="img-fluid"
+                style="border: 2px solid black; box-shadow: 3px 3px 0 black"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="https://placehold.co/300x300/FFF/000?text=ISO"
+                class="img-fluid"
+                style="border: 2px solid black; box-shadow: 3px 3px 0 black"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="https://placehold.co/300x300/333/FFF?text=LENS"
+                class="img-fluid"
+                style="border: 2px solid black; box-shadow: 3px 3px 0 black"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Skills -->
+      <div id="skills" class="text-center mb-5">
+        <h2
+          class="mb-4"
+          style="font-size: 3rem; text-shadow: 3px 3px 0 white, 5px 5px 0 black"
+        >
+          TOOLKIT
+        </h2>
+        <div>
+          <span class="funky-tag" style="font-size: 1.2rem">HTML5</span>
+          <span class="funky-tag" style="font-size: 1.2rem">CSS3</span>
+          <span
+            class="funky-tag"
+            style="
+              font-size: 1.2rem;
+              background: var(--retro-black);
+              color: white;
+            "
+            >JAVASCRIPT</span
+          >
+          <span class="funky-tag" style="font-size: 1.2rem">REACT</span>
+          <span class="funky-tag" style="font-size: 1.2rem">NODE.JS</span>
+          <span class="funky-tag" style="font-size: 1.2rem">GIT</span>
+        </div>
+      </div>
+
+      <!-- 6. Contact Window -->
+      <div id="contact" class="retro-window">
+        <div class="window-header">
+          <h3 class="window-title">send_mail.exe</h3>
+          <div class="window-controls">
+            <div class="control-dot"></div>
+            <div class="control-dot"></div>
+            <div class="control-dot"></div>
+          </div>
+        </div>
+        <div class="window-body">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h2 style="font-size: 2.5rem">
+                LET'S<br />WORK<br /><span style="color: var(--retro-red)"
+                  >TOGETHER</span
+                >
+              </h2>
+              <i
+                class="fas fa-paper-plane"
+                style="font-size: 4rem; margin-top: 20px"
+              ></i>
+            </div>
+            <div class="col-md-6">
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                  <label class="fw-bold mb-1">IDENTIFIER (NAME)</label>
+                  <input
+                    type="text"
+                    class="form-control funky-input"
+                    id="name"
+                    required
+                  />
+                  <div class="invalid-feedback fw-bold">NAME REQUIRED.</div>
+                </div>
+                <div class="mb-3">
+                  <label class="fw-bold mb-1">COMMUNICATION LINK (EMAIL)</label>
+                  <input
+                    type="email"
+                    class="form-control funky-input"
+                    id="email"
+                    required
+                  />
+                  <div class="invalid-feedback fw-bold">
+                    VALID EMAIL REQUIRED.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="fw-bold mb-1">DATA PACKET (MESSAGE)</label>
+                  <textarea
+                    class="form-control funky-input"
+                    id="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback fw-bold">MESSAGE EMPTY.</div>
+                </div>
+                <button type="submit" class="btn btn-funky w-100">
+                  TRANSMIT DATA
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="text-center py-4"
+      style="
+        background: var(--retro-black);
+        color: white;
+        font-family: 'Space Mono';
+      "
+    >
+      <p class="m-0">© 2024 ALEX DEVLIN // END OF LINE</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
